@@ -1,4 +1,4 @@
-const loginUrl = "https://yourwebsite.com/login"; // Replace with your actual login page URL
+const loginUrl = "form.html"; // Replace with your actual login page URL
 
   const qrcode = new QRCode(document.getElementById("qrCode"), {
     text: loginUrl,
