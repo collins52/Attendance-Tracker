@@ -1,22 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.5; /*For readability*/
-    text-decoration: none; /* removes default underline*/
-    outline: none; /*removes focus outline*/
-    font-family: inter;
-  }
-
+@import url('cssReset.css');
   h1{
-    color: #192670;
+    color: var(--primary-color);
     /* border: 1px solid #192670; */
     width: fit-content;
     margin: 100px auto 40px;
   }
   
   #formDiv{
-    border: 2px solid #192670;
+    border: 2px solid var(--primary-color);
     width: 80%;
     margin: auto;
     display: flex;
@@ -32,7 +23,7 @@
     width: 84%;
     height: 55px;
     border-radius: 8px;
-    background-color: #D9D9D9;
+    background-color: var(--secondary-color);
     border: none;
     padding: 0 10px;
     font-size: 17px;
@@ -43,7 +34,7 @@
   }
 
   #doneBtn{
-    background-color: #192670;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     padding: 6px 30px;
@@ -52,7 +43,7 @@
   }
 
   p{
-    color: #192670;
+    color: var(--primary-color);
     width: 265px;
     text-align: center;
     margin: 20px auto 0;
