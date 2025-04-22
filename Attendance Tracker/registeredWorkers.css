@@ -1,0 +1,35 @@
+@import url('cssReset.css');
+
+#registeredWorkers {
+    /* border: 1px solid red; */
+    padding: 20px;
+}
+#name{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+h1{
+    margin: 20px 0px 0px 20px;
+    color: var(--primary-color);
+}
+
+hr{
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+    height: 1px;
+    width: 88%;
+    margin: 20px auto 0px;
+    border: none;
+}
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 15px;
+    width: fit-content;
+    /* border: 1px solid green; */
+    letter-spacing: -1px;
+}

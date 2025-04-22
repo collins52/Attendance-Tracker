@@ -39,3 +39,7 @@ span{
 
 }
 
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
