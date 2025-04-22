@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <title>Attendance Form</title>
+    
+    <!-- Firebase App (the core Firebase SDK) -->
+<!-- Firebase App -->
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<!-- Firebase Realtime Database -->
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+    
+    <link rel='stylesheet' href= 'form.css'>
+    <script type="module" charset="utf-8" src='db.js' defer>
+    </script>
+  </head>
+  <body>
+    <h1>Register Staff</h1>
+    <div id="formDiv">
+      <input type="text" id="staffName" placeholder="Full Name">
+      <input type="number" id="staffId" placeholder="Staff Id" disabled>
+      <button type="button" id="doneBtn">Generate Staff Id</button>
+    </div>
+    <a href="staffcredentials.html"> staff credentials</a>
+  </body>
+</html>

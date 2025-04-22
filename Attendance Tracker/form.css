@@ -1,41 +1,50 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.5; /*For readability*/
-    text-decoration: none; /* removes default underline*/
-    outline: none; /*removes focus outline*/
-  }
+@import url('cssReset.css');
   h1{
-    position: absolute;
-    top: 100px;
-    right: 120px;
-    border: 1px solid green;
+    color: var(--primary-color);
+    /* border: 1px solid #192670; */
     width: fit-content;
-  }
-  #attendanceForm{
-    border: 1px solid red;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 80vw;
-    height: 300px;
-    justify-content: space-around;
-    align-items: center;
-    margin: 200px auto;
-    padding: 20px;
-  }
-  #attendanceForm input{
-    height: 50px;
-    border-radius: 10px;
-    border: 1px solid grey;
-    width: 250px;
-    padding: 5px;
+    margin: 100px auto 40px;
   }
   
-  #form #submitBtn{
-    width: 170px;
-    height: 40px;
+  #formDiv{
+    border: 2px solid var(--primary-color);
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    padding: 35px 0 45px 0;
+    justify-content: space-around;
+    align-items: center;
     border-radius: 10px;
+  }
+
+  input{
+    width: 84%;
+    height: 55px;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
     border: none;
+    padding: 0 10px;
+    font-size: 17px;
+  }
+
+  input::placeholder{
+    font-size: 17px;
+  }
+
+  #doneBtn{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 6px 30px;
+    font-size: 19px;
+    border-radius: 6px;
+  }
+
+  p{
+    color: var(--primary-color);
+    width: 265px;
+    text-align: center;
+    margin: 20px auto 0;
   }

@@ -1,0 +1,67 @@
+@import url('cssReset.css');
+
+#header{
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10px;
+}
+
+#attendanceList{
+    font-size: 12px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+input{
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 35px;
+    padding: 0px 5px;
+}
+
+#tableHeader{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 4fr 2fr 1.5fr;
+}
+
+.tableRow{
+    display: grid;
+    grid-template-columns: 4fr 2fr 1.5fr;
+    margin-top: 20px;
+}
+
+#currentDate{
+    font-size: 30px;
+}
+span{
+    color: var(--primary-color);
+}
+
+#present{
+    color: green;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+#absent{
+    color: red;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+#late{
+    color: orange;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+#adminPanel{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-left: 10px;
+}

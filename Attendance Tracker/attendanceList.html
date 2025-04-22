@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="attendanceList.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <input type="date" id="dateInput">
+        <h1 id="currentDate"></h1>
+    </div>
+
+    <div id="attendanceList">
+        <div id="tableHeader">
+            <p>StaffName</p>
+            <p>StaffId</p>
+            <p>Time</p>
+        </div>
+
+        <!-- present -->
+        <p id="present">Present</p>
+        <div id="tableContent presentCase">
+            <div class="tableRow">
+                <p>Collins Omonievusa</p>
+                <p>141451</p>
+                <p>01:20 <span>AM</span></p>
+            </div>
+            <div class="tableRow">
+                <p>Tonwe Ayiri Daniel</p>
+                <p>141451</p>
+                <p>01:20 <span>AM</span></p>
+            </div>
+            <div class="tableRow">
+                <p>Collins Tega Omonievusa</p>
+                <p>141451</p>
+                <p>01:20 <span>AM</span></p>
+            </div>
+        </div>   
+        <!-- Late -->
+        <p id="late">Late</p>
+        <div id="tableContent absentCase">
+            <div class="tableRow">
+                <p>Collins Omonievusa</p>
+                <p>141451</p>
+                <p>01:20 <span>AM</span></p>
+            </div>
+            <div class="tableRow">
+                <p>Tonwe Ayiri Daniel</p>
+                <p>141451</p>
+                <p>01:20 <span>AM</span></p>
+            </div>
+            <div class="tableRow">
+                <p>Collins Tega Omonievusa</p>
+                <p>141451</p>
+                <p>01:20 <span>AM</span></p>
+            </div>
+        </div>
+
+        <!-- Absent -->
+        <p id="absent">Absent</p>
+        <div id="tableContent absentCase">
+            <div class="tableRow">
+                <p>Collins Omonievusa</p>
+                <p>141451</p>
+                <p>01:20 <span>AM</span></p>
+            </div>
+            <div class="tableRow">
+                <p>Tonwe Ayiri Daniel</p>
+                <p>141451</p>
+                <p>01:20 <span>AM</span></p>
+            </div>
+            <div class="tableRow">
+                <p>Collins Tega Omonievusa</p>
+                <p>141451</p>
+                <p>01:20 <span>AM</span></p>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="adminPanel.html" id="adminPanel">Admin panel</a>
+
+    <script>
+        const dateInput = document.getElementById('dateInput');
+
+        dateInput.addEventListener('change', function(){
+            const selectedDate = new Date(dateInput.value)
+            const options = {weekday: 'short', month:'short', year:'numeric'}
+            const formattedDate = selectedDate.toLocaleDateString('en-US', options).replace(/,/g, '-');
+
+            document.getElementById('currentDate').innerText = formattedDate
+            console.log(formattedDate)
+        })
+    </script>
+</body>
+</html>
