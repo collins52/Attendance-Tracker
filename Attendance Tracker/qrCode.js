@@ -4,7 +4,7 @@ const loginUrl = "https://yourwebsite.com/login"; // Replace with your actual lo
     text: loginUrl,
     width: 128,
     height: 128,
-    colorDark: "#000000",
-    colorLight: "#ffffff",
+    colorDark: "#ffffff",
+    colorLight: "#192670",
     correctLevel: QRCode.CorrectLevel.H
   });
